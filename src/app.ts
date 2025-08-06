@@ -6,7 +6,7 @@ import listingsRouter from './routes/listings';
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 app.use(cors());
 app.use(express.json());
@@ -27,7 +27,7 @@ app.use((error: Error, req: express.Request, res: express.Response, next: expres
 });
 
 if (require.main === module) {
-  app.listen(PORT, () => {
+  app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server running on port ${PORT}`);
   });
 }
