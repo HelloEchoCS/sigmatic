@@ -1,10 +1,12 @@
-# Sigmatic - HouseSigma API Server
+# Sigmatic - HouseSigma Listing Search API Server
 
 A TypeScript Express.js API server that interfaces with HouseSigma to search for house listings.
+Note: Since HouseSigma's API is not publicly documented, this project is the result of reverse engineering their web client. It is only intended for educational or personal use.
 
 ## Features
 
 - **Authentication**: Automatic token management for HouseSigma API
+- **Payload Encryption and Decryption**: Encrypt and decrypt payloads for secure communication with HouseSigma
 - **House Search**: Search listings with price range and square footage filters
 - **TypeScript**: Full type safety and modern JavaScript features
 - **Express.js**: RESTful API with proper error handling
